@@ -1,7 +1,21 @@
-/* text: "#05050a",
-              background: "#f1f0fa",
-              primary: "#1a1565",
-              secondary: "#8a83eb",
-              // check this with opacity
-              secondary2: "#dddaf7",
-              accent: "#5146f0", */
+@import "tailwindcss";
+@theme {
+  --color-text: #05050a;
+  --color-background: #f1f0fa;
+  --color-primary: #1a1565;
+  --color-secondary: #8a83eb;
+  --color-secondary2: rgb(138 131 235 / 0.1); /* With opacity */
+  --color-accent: #5146f0;
+
+  /* Text colors */
+  --color-body: var(--color-text);
+  --color-heading: var(--color-text);
+
+  /* Surface colors */
+  --color-surface-1: var(--color-background);
+  --color-surface-2: var(--color-secondary2);
+
+  /* Semantic colors */
+  --color-link: var(--color-primary);
+  --color-link-hover: var(--color-accent);
+}
