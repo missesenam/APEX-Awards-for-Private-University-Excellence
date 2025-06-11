@@ -1,21 +1,59 @@
 @import "tailwindcss";
+@plugin "daisyui";
+
 @theme {
-  --color-text: #05050a;
-  --color-background: #f1f0fa;
-  --color-primary: #1a1565;
-  --color-secondary: #8a83eb;
-  --color-secondary2: rgb(138 131 235 / 0.1); /* With opacity */
-  --color-accent: #5146f0;
+  /* Base Colors */
+  --color-brand: #de9301; /* Primary brand color */
+  --color-brand-dark: #b87600; /* 20% darker for hover states */
+  --color-brand-light: #f0b133; /* 20% lighter for accents */
+  --color-black: #050505; /* True black for text */
+  --color-gray-1: #1a1a1a; /* Dark gray */
+  --color-gray-2: #4d4d4d; /* Medium gray */
+  --color-gray-3: #e6e6e6; /* Light gray */
+  --color-white: #ffffff; /* Pure white */
 
-  /* Text colors */
-  --color-body: var(--color-text);
-  --color-heading: var(--color-text);
+  /* Semantic Colors */
+  --color-text: var(--color-black);
+  --color-text-inverted: var(--color-white);
+  --color-background: var(--color-white);
+  --color-primary: var(--color-brand);
+  --color-secondary: var(--color-gray-1);
+  --color-accent: var(--color-brand-light);
+  --color-border: var(--color-gray-3);
 
-  /* Surface colors */
-  --color-surface-1: var(--color-background);
-  --color-surface-2: var(--color-secondary2);
+  /* Component Colors */
+  --color-button: var(--color-brand);
+  --color-button-hover: var(--color-brand-dark);
+  --color-card-bg: var(--color-white);
+  --color-card-border: var(--color-gray-3);
 
-  /* Semantic colors */
-  --color-link: var(--color-primary);
-  --color-link-hover: var(--color-accent);
+  /* Text Styles */
+  --color-heading: var(--color-black);
+  --color-body: var(--color-gray-1);
+  --color-caption: var(--color-gray-2);
+
+  /* Utility Colors */
+  --color-success: #16a34a;
+  --color-warning: #f59e0b;
+  --color-error: #dc2626;
+  --color-info: #2563eb;
+}
+
+/* Custom Classes */
+@layer components {
+  .bg-brand-gradient {
+    background: linear-gradient(
+      135deg,
+      var(--color-brand) 0%,
+      var(--color-brand-dark) 100%
+    );
+  }
+
+  .text-brand-gradient {
+    @apply bg-gradient-to-r from-brand to-brand-dark bg-clip-text text-transparent;
+  }
+
+  .border-brand {
+    @apply border-2 border-brand;
+  }
 }
