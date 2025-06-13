@@ -3,57 +3,57 @@
 
 @theme {
   /* Base Colors */
-  --color-brand: #de9301; /* Primary brand color */
-  --color-brand-dark: #b87600; /* 20% darker for hover states */
-  --color-brand-light: #f0b133; /* 20% lighter for accents */
-  --color-black: #050505; /* True black for text */
-  --color-gray-1: #1a1a1a; /* Dark gray */
-  --color-gray-2: #4d4d4d; /* Medium gray */
-  --color-gray-3: #e6e6e6; /* Light gray */
-  --color-white: #ffffff; /* Pure white */
+  --color-primary: #de9301;
+  --color-primary-dark: #b87600;
+  --color-primary-light: #f0b133;
+  --color-black: #050505;
+  --color-gray-1: #1a1a1a;
+  --color-gray-2: #4d4d4d;
+  --color-gray-3: #e6e6e6;
+  --color-white: #ffffff;
 
   /* Semantic Colors */
-  --color-text: var(--color-black);
+  /* --color-text: var(--color-black);
   --color-text-inverted: var(--color-white);
   --color-background: var(--color-white);
   --color-primary: var(--color-brand);
   --color-secondary: var(--color-gray-1);
   --color-accent: var(--color-brand-light);
-  --color-border: var(--color-gray-3);
+  --color-border: var(--color-gray-3); */
 
   /* Component Colors */
-  --color-button: var(--color-brand);
+  /* --color-button: var(--color-brand);
   --color-button-hover: var(--color-brand-dark);
   --color-card-bg: var(--color-white);
-  --color-card-border: var(--color-gray-3);
+  --color-card-border: var(--color-gray-3); */
 
   /* Text Styles */
-  --color-heading: var(--color-black);
+  /* --color-heading: var(--color-black);
   --color-body: var(--color-gray-1);
-  --color-caption: var(--color-gray-2);
+  --color-caption: var(--color-gray-2); */
 
   /* Utility Colors */
-  --color-success: #16a34a;
+  /* --color-success: #16a34a;
   --color-warning: #f59e0b;
   --color-error: #dc2626;
-  --color-info: #2563eb;
+  --color-info: #2563eb; */
 }
 
 /* Custom Classes */
 @layer components {
-  .bg-brand-gradient {
+  /* .bg-brand-gradient {
     background: linear-gradient(
       135deg,
       var(--color-brand) 0%,
       var(--color-brand-dark) 100%
     );
-  }
+  } */
 
-  .text-brand-gradient {
+  /* .text-brand-gradient {
     @apply bg-gradient-to-r from-brand to-brand-dark bg-clip-text text-transparent;
-  }
+  } */
 
-  .border-brand {
+  /* .border-brand {
     @apply border-2 border-brand;
-  }
+  } */
 }
