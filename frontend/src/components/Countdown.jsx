@@ -19,7 +19,7 @@ export default function Countdown() {
           <span className="countdown font-mono text-4xl">
             <span style={{ "--value": 24 }}></span>
           </span>
-          min
+          mins
         </div>
         <div className="flex flex-col items-center">
           <span className="countdown font-mono text-4xl">
